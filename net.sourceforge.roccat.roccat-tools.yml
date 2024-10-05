@@ -1,7 +1,7 @@
 app-id: net.sourceforge.roccat.roccat-tools
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: "24.08"
 command: roccat-tools.sh
 
 finish-args:
@@ -60,7 +60,7 @@ modules:
       - cd /app/share/applications/ && for desktop_filename in *; do mv "$desktop_filename" "net.sourceforge.roccat.roccat-tools.$desktop_filename"; done;
       - cd /app/share/applications/ && for desktop_filename in *; do desktop-file-edit --set-key Icon --set-value $FLATPAK_ID "$desktop_filename"; done;
       - install -Dm755 net.sourceforge.roccat.roccat-tools.desktop -t /app/share/applications/
-      # Install help script 
+      # Install help script
       - install -Dm755 roccat-tools.sh /app/bin/roccat-tools.sh
       # Install README.md
       - install -Dm755 README.md /app/share/doc/roccat-tools/README.md

@@ -5,6 +5,7 @@
   <name>Roccat-tools</name>
   <summary>Applications to configure Roccat devices.</summary>
   <description>
+    <p>Important: Please read instructions at https://github.com/flathub/net.sourceforge.roccat.roccat-tools to configure your device.</p>
     <p>The following devices are supported:</p>
     <p>list of supported keyboards:</p>
     <ul>
@@ -40,18 +41,25 @@
       <li>Savu</li>
       <li>Tyon Black/White</li>
     </ul>
-    <p>Important: Please read instructions at https://github.com/flathub/net.sourceforge.roccat.roccat-tools/ to configure your device.</p>
   </description>
   <releases>
     <release version="5.9.0" date="2019-04-13"></release>
   </releases>
   <screenshots>
     <screenshot type="default">
-    <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/RyosMKFX-4.0.0.png</image>
-    <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccattyonconfig.png</image>
-    <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccatiskufxconfig.png</image>
-    <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccatkonextdopticalconfig.png</image>
-    <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccatkovaplusconfig.png</image>
+      <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/RyosMKFX-4.0.0.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccattyonconfig.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccatiskufxconfig.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccatkonextdopticalconfig.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://a.fsdn.com/con/app/proj/roccat/screenshots/roccatkovaplusconfig.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://sourceforge.net/projects/roccat/</url>
