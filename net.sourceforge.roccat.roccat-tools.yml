@@ -29,8 +29,12 @@ modules:
       - -Dgtk_doc=false
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/GNOE/libnotify/-/archive/0.8.2/libnotify-0.8.2.tar.gz
-        sha256: 84d6bbcd633ff10eed25226730c52220cd41e362bb183513e5b6a5d1b3c0c12f
+        url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.7.tar.xz
+        sha256: 4be15202ec4184fce1ac15997ece5530d2be32fe9573875aeb10e3b573858748
+        x-checker-data:
+          project-id: 13149
+          type: anitya
+          url-template: https://download.gnome.org/sources/libnotify/$major.$minor/libnotify-$version.tar.xz
 
   - name: libgaminggear
     buildsystem: cmake-ninja
