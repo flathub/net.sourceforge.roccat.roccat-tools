@@ -19,7 +19,8 @@ flatpak run --command="cat" net.sourceforge.roccat.roccat-tools /app/lib/udev/90
 3. Reload udev rules
 
 ```sh
-sudo udevadm control --reload-rules && udevadm trigger
+sudo udevadm control --reload-rules
+sudo udevadm trigger
 ```
 
 ## Start your device application
