@@ -32,6 +32,10 @@ modules:
       - type: archive
         url: https://downloads.sourceforge.net/project/libgaminggear/libgaminggear-0.15.1.tar.bz2
         sha256: ffbd59c62e3107b09ec99f1e5147529c61931987abc7f86a140449b46388c549
+        x-checker-data:
+          project-id: 380806
+          type: anitya
+          url-template: https://downloads.sourceforge.net/project/libgaminggear/libgaminggear-$version.tar.bz2
 
   - name: roccat-tools
     buildsystem: cmake-ninja
