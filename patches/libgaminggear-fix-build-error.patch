@@ -1,0 +1,26 @@
+From 03fde9d224301113262e4e6a606712d13f92a0d0 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 10 May 2026 16:58:31 +0300
+Subject: [PATCH] Fix build error
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ CMakeLists.txt | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 36b5f93..4cf4c1e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,7 +1,4 @@
+-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+-IF(POLICY CMP0022)
+-  CMAKE_POLICY(SET CMP0022 OLD)
+-ENDIF()
++CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+ 
+ PROJECT(libgaminggear C)
+ 
+--
+libgit2 1.7.2
+

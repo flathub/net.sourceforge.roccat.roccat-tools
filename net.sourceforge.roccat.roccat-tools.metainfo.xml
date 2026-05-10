@@ -43,7 +43,18 @@
     </ul>
   </description>
   <releases>
-    <release version="5.9.0" date="2019-04-13"></release>
+    <release version="5.9.1" date="2025-10-27">
+      <description>
+        <ul>
+          <li>Added: Increased minimum GTK version to 2.24</li>
+          <li>Improved: Removed unused code</li>
+          <li>Improved: Added new knowledge</li>
+          <li>Fixed: Error handler loop</li>
+          <li>Fixed: Diverse compilation problems</li>
+        </ul>
+      </description>
+    </release>
+    <release version="5.9.0" date="2019-04-13"/>
   </releases>
   <screenshots>
     <screenshot type="default">
@@ -63,6 +74,7 @@
     </screenshot>
   </screenshots>
   <url type="homepage">https://sourceforge.net/projects/roccat/</url>
+  <url type="bugtracker">https://sourceforge.net/p/roccat/bugs/</url>
   <developer_name>Stefan Achatz</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>

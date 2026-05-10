@@ -1,7 +1,7 @@
 app-id: net.sourceforge.roccat.roccat-tools
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 command: roccat-tools.sh
 
 finish-args:
@@ -36,6 +36,8 @@ modules:
           project-id: 380806
           type: anitya
           url-template: https://downloads.sourceforge.net/project/libgaminggear/libgaminggear-$version.tar.bz2
+      - type: patch
+        path: patches/libgaminggear-fix-build-error.patch
 
   - name: roccat-tools
     buildsystem: cmake-ninja
@@ -46,6 +48,7 @@ modules:
       - -DUDEVDIR=/app/lib/udev
       - -DLIBDIR=/app/lib
       - -DWITH_LUA=5.4
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     post-install:
       # Install metainfo
       - install -Dm644 net.sourceforge.roccat.roccat-tools.metainfo.xml /app/share/metainfo/net.sourceforge.roccat.roccat-tools.metainfo.xml
@@ -59,8 +62,8 @@ modules:
       - install -Dm755 README.md /app/share/doc/roccat-tools/README.md
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/roccat/roccat-tools/roccat-tools-5.9.0.tar.bz2
-        sha256: 6f6766309bace2aece09910912d4a6d8bec61c9b4432f4f3ed388ebf7e16408a
+        url: https://downloads.sourceforge.net/project/roccat/roccat-tools/roccat-tools-5.9.1.tar.bz2
+        sha256: e9b832af997b145d47ccf8d3e5a2522fbc627241c9f6367bdd496bc77fad435a
       - type: patch
         path: patches/ryos-device-h.patch
       - type: patch
