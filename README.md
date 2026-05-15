@@ -13,8 +13,10 @@ flatpak run --command="ls" net.sourceforge.roccat.roccat-tools /app/lib/udev
 2. Copy the rules correponding to your devices(s) to your host system. For instance :
 
 ```sh
-flatpak run --command="cat" net.sourceforge.roccat.roccat-tools /app/lib/udev/90-roccat-[YOUR_DEVICE].rules | sudo tee /etc/udev/rules.d/90-roccat-[YOUR_DEVICE].rules
+DEVICE=[YOUR_DEVICE] && flatpak run --command="cat" net.sourceforge.roccat.roccat-tools /app/lib/udev/90-roccat-${DEVICE}.rules | sed -e 's/, GROUP="roccat"//g' -e 's/MODE="0660"/MODE="0666"/g' | sudo tee /etc/udev/rules.d/90-roccat-${DEVICE}.rules
 ```
+
+replace `[YOUR_DEVICE]` with your device. e.g : `DEVICE=tyon && flatpak [...]`
 
 3. Reload udev rules
 
