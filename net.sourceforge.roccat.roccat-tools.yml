@@ -54,7 +54,7 @@ modules:
       - install -Dm644 net.sourceforge.roccat.roccat-tools.metainfo.xml /app/share/metainfo/net.sourceforge.roccat.roccat-tools.metainfo.xml
       # Rename desktop files
       - cd /app/share/applications/ && for desktop_filename in *; do mv "$desktop_filename" "net.sourceforge.roccat.roccat-tools.$desktop_filename"; done;
-      - cd /app/share/applications/ && for desktop_filename in *; do desktop-file-edit --set-key Icon --set-value $FLATPAK_ID "$desktop_filename"; done;
+      - cd /app/share/applications/ && for desktop_filename in *; do desktop-file-edit --set-icon=$FLATPAK_ID "$desktop_filename"; done;
       - install -Dm755 net.sourceforge.roccat.roccat-tools.desktop -t /app/share/applications/
       # Install help script
       - install -Dm755 roccat-tools.sh /app/bin/roccat-tools.sh
